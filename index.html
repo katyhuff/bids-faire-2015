@@ -4,10 +4,11 @@
 	<head>
 		<meta charset="utf-8">
 
-                <title>Reproducibility Working Group</title>
+                <title>Effective Computation In Physics</title>
 
                 <meta name="description" content="
-                BIDS Onboarding, 2015.
+                A short panel session on academia and open source. 
+                Seattle, WA, February 2015.
                 ">
 		<meta name="author" content="Kathryn Huff">
 
@@ -45,216 +46,294 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
                                 <section>
-                                <h1>Reprodcibility and Open Science Working Group</h1>
+                                <h1>Effective Computation In Physics</h1>
+                                      <h3>A Field Guide to Research With Python</h3>
                                         <br/>
                                         <h3>Kathryn Huff</h3>
-                                        <h3>BIDS Onboarding, September 4, 2015</h3>
+                                        <h3>BIDS Data Science Faire, May 5, 2015</h3>
                                 </section>
 
                                 <section>
-                                        <section data-markdown>
-                                            <script type="text/template">
-                                                ## Why
-
-
-                                                **Open data, code, and 
-                                                publication** enable 
-                                                **reproduction, extension, 
-                                                objective verification, 
-                                                validation, and transparency.**  
-
-                                                The most fundamental tenents of 
-                                                science.
-
-
-                                            </script>
-                                        </section>
-                                        <section data-markdown>
-                                            <script type="text/template">
-                                                ## Credibility Crisis
-
-                                                The tools for automation made available by computers can make this easier.
-
-                                                So why is there a credibility crisis in science?
-
-                                            </script>
-                                        </section>
-                                        <section data-markdown>
-                                            <script type="text/template">
-                                                ## Credibility Crisis
-
-                                                > "Rampant software errors undermine scientific results" 
-                                                -- David A.W. Soergel, 2014 
-                                                [http://f1000research.com/articles/3-303/v1](http://f1000research.com/articles/3-303/v1)
-                                            </script>
-                                        </section>
-                                        <section data-markdown>
-                                            <script type="text/template">
-                                                ## Success Metrics
-
-                                                - Helping define how reproducibility, open science, and open access gets done.
-                                                - Increasing open-science behaviors, including posting code, posting data, and coding hygiene (e.g., version control).
-                                                - Developing tools and methods for preserving confidentiality while allowing for reproducibility
-                                            </script>
-                                        </section>
-
-                                        <section data-markdown>
-                                            <script type="text/template">
-                                               Other working groups interface with this one through the development of tools (SWWG), training (ETWG), and environments (WSCWG) that support reproducibility and open science.
-                                            </script>
-                                        </section>
-
-                                        <section data-markdown>
-                                            <script type="text/template">
-                                                ## Other Efforts
-                                                - [WSSSPE](http://wssspe.researchcomputing.org.uk/) 
-                                                - [SSI](http://www.software.ac.uk/)
-                                                - [COS](http://centerforopenscience.org/) 
-                                                - [OSF](https://osf.io)
-                                                - [Reproducible Science 
-                                                Hackathon](https://github.com/Reproducible-Science-Curriculum/Reproducible-Science-Hackathon-Dec-08-2014)
-                                                - [Software & Data 
-                                                Carpentry](https://software-carpentry.org)
-                                                - [UW Guidelines](http://uwescience.github.io/reproducible/guidelines.html)
-                                                - [Berkeley Common Environment](http://bce.berkeley.edu/)
-                                                - .... 
-                                            </script>
+                                        <section>
+                                                <span class="fragment">
+                                                <a 
+                                                  href="http://fuelcycle.org"
+                                                  class="image"><img
+                                                  width="30%"
+                                                  src="http://fuelcycle.org/_images/logo2_bike.gif"
+                                                  alt="cyclus"></a>
+                                                <a href="http://pyrk.github.io"
+                                                  class="image"><img
+                                                  width="25%"
+                                                  src="http://pyrk.github.io/_images/logo.png"
+                                                  alt="pyrk"></a>
+                                                <a href="http://pyne.io"
+                                                  class="image"><img
+                                                  width="30%"
+                                                  src="http://bids.berkeley.edu/sites/default/files/styles/450x254/public/projects/pyne-450x254.png?itok=rdkh0T8e"
+                                                  alt="pyne"></a>
+                                                <a
+                                                  href="http://software-carpentry.org"
+                                                  class="image"><img
+                                                  width="30%"
+                                                  src="http://bids.berkeley.edu/sites/default/files/styles/450x254/public/projects/software-carpentry-450x254.png?itok=0XnUCwrr"
+                                                  alt="Software Carpentry"></a>
+                                                <a
+                                                  href="http://thehackerwithin.github.io"
+                                                  class="image"><img
+                                                  width="30%"
+                                                  src="http://thehackerwithin.github.io/images/thw_icon.png"
+                                                  alt="THW"></a>
+                                                </span>
+                                                <span class="fragment">
+                                                <a 
+                                                  href="http://physics.codes"
+                                                  class="image"><img
+                                                  width="30%"
+                                                  src="http://physics.codes/images/ecip_er.jpg"
+                                                  alt="book"></a>
+                                                </span>
                                         </section>
                                 </section>
 				<section>
-                                        <section data-markdown>
-                                            <script type="text/template">
-                                                ## Who
+                                        <section>
+                                                <span class="fragment">
+                                                <a 
+                                                  href="http://physics.codes"
+                                                  class="image"><img
+                                                  src="https://covers.oreillystatic.com/images/0636920033424/lrg.jpg"
+                                                  alt="book"></a>
+                                                </span>
+                                        </section>
+					<section>
+                                        <h2>Science</h2>
+                                        <ul>
+                                          <li class="fragment">builds and organizes knowledge</li>
+                                          <li class="fragment">tests explanations about the universe</li>
+                                          <li class="fragment">systematically,</li>
+                                          <li class="fragment">objectively,</li>
+                                          <li class="fragment">transparently,</li>
+                                          <li class="fragment">and reproducibly.</li>
+                                        </ul>
 
-                                                [bids.berkeley.edu/working-groups/reproducibility-and-open-science#working_group_members](https://bids.berkeley.edu/working-groups/reproducibility-and-open-science#working_group_members)
-
-                                                - **Faculty Lead:** Philip Stark
-                                                - **Fellow Lead:** Fatma Imamoglu 
-                                                - Reproducibility Case Studies Subgroup
-                                                - Lexicon Subgroup
-
-                                            </script>
+                                        <p class="fragment"><b>Otherwise it's not science.</b></p>
+					</section>
+                                        <section>
+                                                <span class="fragment">
+                                                <a 
+                                                  href="http://physics.codes"
+                                                  class="image"><img
+                                                  width="60%"
+                                                  src="http://www.womenofbadassery.com/wp-content/uploads/2015/04/toni-morrison.jpg"
+                                                  alt="it was anthony's idea"></a>
+                                                </span>
+                                                <p><span class="fragment">
+                                                 (Anthony talked me into it.)
+                                                </span>
+                                                </p>
+                                        </section>
+                                        <section>
+                                         <h3>Getting Started</h3>
+                                                <span class="fragment">
+                                                  <a
+                                                    href="https://raw.githubusercontent.com/katyhuff/town-hall/gh-pages/images/blame.png"
+                                                    class="image"><img
+                                                    width="50%"
+                                                    src="https://raw.githubusercontent.com/katyhuff/town-hall/gh-pages/images/blame.png"
+                                                    alt="getting done"></a>
+                                                </span>
+                                                <span class="fragment">
+                                                <small>
+                                                <br/>
+                                                <br/>
+                                                <ul>
+                                                  <li>Chapter 1 - Introduction to the Command Line</li>
+                                                  <li>Chapter 2 - Programming Blast Off with Python</li>
+                                                  <li>Chapter 3 - Essential Containers</li>
+                                                  <li>Chapter 4 - Flow Control and Logic</li>
+                                                  <li>Chapter 5 - Operating with Functions</li>
+                                                  <li>Chapter 6 - Classes and Objects</li>
+                                                </ul>
+                                                </small>
+                                                </span>
+                                        </section>
+                                        <section>
+                                         <h3>Getting It Done</h3>
+                                                <span class="fragment">
+                                                  <a
+                                                    href="http://physics.codes/images/n-body-save-t0.001.png"
+                                                    class="image"><img
+                                                    width="50%"
+                                                    src="http://physics.codes/images/n-body-save-t0.001.png"
+                                                    alt="getting it done"></a>
+                                                </span>
+                                                <span class="fragment">
+                                                <small>
+                                                <br/>
+                                                <br/>
+                                                <ul>
+                                                  <li>Chapter 7 - Analysis and Visualization</li>
+                                                  <li>Chapter 8 - Regular Expressions</li>
+                                                  <li>Chapter 9 - NumPy: Thinking in Arrays</li>
+                                                  <li>Chapter 10 - Storing Data: Files and HDF5</li>
+                                                  <li>Chapter 11 - Important Data Structures in Physics</li>
+                                                  <li>Chapter 12 - Performing in Parallel</li>
+                                                  <li>Chapter 13 - Deploying Software</li>
+                                                </ul>
+                                                </small>
+                                                </span>
+                                        </section>
+                                        <section>
+                                         <h3>Getting It Right</h3>
+                                                <span class="fragment">
+                                                  <a
+                                                    href="http://physics.codes/images/runsnake-fh.png"
+                                                    class="image"><img
+                                                    width="50%"
+                                                    src="http://physics.codes/images/runsnake-fh.png"
+                                                    alt="getting it right"></a>
+                                                </span>
+                                                <span class="fragment">
+                                                <small>
+                                                <br/>
+                                                <br/>
+                                                <ul>
+                                                  <li>Chapter 14 - Building Software Pipelines</li>
+                                                  <li>Chapter 15 - Local Version Control</li>
+                                                  <li>Chapter 16 - Remote Version Control</li>
+                                                  <li>Chapter 17 - Debugging</li>
+                                                  <li>Chapter 18 - Testing</li>
+                                                </ul>
+                                                </small>
+                                                </span>
+                                        </section>
+                                        <section>
+                                         <h3>Getting It Out There</h3>
+                                                <span class="fragment">
+                                                <a 
+                                                  href="http://physics.codes/images/self_assign.png"
+                                                  class="image"><img
+                                                  width="50%"
+                                                  src="http://physics.codes/images/self_assign.png"
+                                                  alt="getting it out there"></a>
+                                                </span>
+                                                <span class="fragment">
+                                                <small>
+                                                <br/>
+                                                <br/>
+                                                <ul>
+                                                  <li>Chapter 19 - Documentation</li>
+                                                  <li>Chapter 20 - Publication</li>
+                                                  <li>Chapter 21 - Collaboration</li>
+                                                  <li>Chapter 22 - Licenses, Ownership, and Copyright</li>
+                                                  <li>Chapter 23 - Further Musings</li>
+                                                </ul>
+                                                </small>
+                                                </span>
                                         </section>
                                 </section>
 				<section>
-                                        <section data-markdown>
-                                            <script type="text/template">
-                                                ## How
-
-                                                
-                                                - We meet every two weeks.
-                                                - Subgroup meetings happen more often.
-                                                - Various successes have emerged
-                                               
-                                            </script>
+					<section>
+                                        <h2>Acknowledgements</h2>
+                                                <a 
+                                                  href="http://anthony.scopatz.com"
+                                                  class="image"><img
+                                                  src="http://physics.codes/images/anthony.jpg"
+                                                  alt="book"></a>
+                                                <p>
+                                                  Prof. Anthony M. Scopatz
+                                               </p>
                                         </section>
-                                        <section data-markdown>
-                                            <script type="text/template">
-                                                ## Reproducibility and Open Science Conference
-                                                
-                                                [https://github.com/BIDS/repro-conf](https://github.com/BIDS/repro-conf)
-
-                                                - Three days
-                                                - Invitation Only
-                                                - Case Studies, Education, Self-assessment 
-                                            </script>
-                                        </section>
-                                        <section data-markdown>
-                                            <script type="text/template">
-                                                ## Reproducibility Case Studies Book
-
-                                                - Justin Kitzes, Fatma Imamoglu, Daniel Turek, Katy Huff, Kyle Barbary, Karthik Ram, Ariel Rokem, Philip Stark, and many others
-                                                - Book proposal stage
-                                                - Collected 20+ [case studies](https://github.com/BIDS/repro-case-studies/blob/master/case-studies/dturek.pdf) 
-                                                from scientists (and counting)
-                                                - Motivation is to capture 
-                                                  emergent themes, tease out 
-                                                  differences in domains, 
-                                                  identify common pain points, 
-                                                  show the benefits of repeatable 
-                                                  open reproducible science
-
-                                            </script>
-                                        </section>
-                                        <section data-markdown>
-                                            <script type="text/template">
-                                                ## Reproducibility Checklist
-                                                [https://github.com/BIDS/reproducibility-wg/tree/master/self_eval](https://github.com/BIDS/reproducibility-wg/tree/master/self_eval)
-
-                                                - like the [Joel Test](http://www.joelonsoftware.com/articles/fog0000000043.html), but for reproducible, open science
-                                                - developed checklists and decision trees internally
-                                                - discussed and iterated at the conference
-                                                - more work left to do to make this work useful
-                                                - Ben Marwick at UW made a similar badging app 
-                                                [https://benmarwick.shinyapps.io/ros_badge/](https://benmarwick.shinyapps.io/ros_badge/)
-                                            </script>
-                                        </section>
-                                        <section data-markdown>
-                                            <script type="text/template">
-                                                ## Reproducibility Lexicon
-
-                                                - Daniel Turek, Karthik Ram
-                                                - the terminology can be vague 
-                                                and misleading. 
-                                                (preproducibility, 
-                                                reproducibility, replicability, 
-                                                repeatability all mean subtly 
-                                                different things)
-                                                - Data has been collected from 
-                                                PLOS and other journals. 
-                                                - Natural language analysis, per domain, begins 
-                                                soon.
-                                            </script>
+					<section>
+                                        <h2>Acknowledgements</h2>
+                                                <a
+                                                  href="http://software-carpentry.org"
+                                                  class="image"><img
+                                                  width="30%"
+                                                  src="http://bids.berkeley.edu/sites/default/files/styles/450x254/public/projects/software-carpentry-450x254.png?itok=0XnUCwrr"
+                                                  alt="Software Carpentry"></a>
+                                                <a
+                                                  href="http://thehackerwithin.github.io"
+                                                  class="image"><img
+                                                  width="30%"
+                                                  src="http://thehackerwithin.github.io/images/thw_icon.png"
+                                                  alt="THW"></a>
+                                                 <p>This book was heavily inspired by the work of
+                                                  <a href="http://software-carpentry.org/">Software Carpentry</a> and
+                                                  <a href="http://thehackerwithin.github.io/">The Hacker Within</a>.
+                                                  We are thrilled to see <i>Effective Computation in Physics</i>
+                                                  come to press and spread the
+                                                  joys of computation further into the physical sciences.
+                                                  In case you were wondering, the cuddly creature on the cover is a
+                                                  <a href="http://en.wikipedia.org/wiki/Bobtail_squid">bobtail
+                                                  squid</a>.
+                                                  </p>
                                         </section>
                                 </section>
 				<section>
-                                        <section data-markdown>
-                                            <script type="text/template">
-                                                ## What (next)
-
-                                                The future is yours.
-
-                                            </script>
+                                        <section>
+                                        <h2>Get The Book!</h2>
+                                        <ul>
+                                          <li>
+                                          <a href="http://physics.codes/">
+                                                  physics.codes
+                                          </a></li>
+        
+                                          <li>
+                                          <a href="http://github.com/physics.codes/examples">
+                                                  github.com/physics.codes/examples
+                                          </a></li>
+        
+                                          <li>
+                                          <a href="http://shop.oreilly.com/product/0636920033424.do">
+                                                   shop.oreilly.com/product/0636920033424.do
+                                          </a></li>
+                                        </ul>
+                                        <p>
+                                                <a 
+                                                  href="http://physics.codes"
+                                                  class="image"><img
+                                                  width="25%"
+                                                  src="https://covers.oreillystatic.com/images/0636920033424/lrg.jpg"
+                                                  alt="book"></a>
+                                          </p>
                                         </section>
-                                        <section data-markdown>
-                                            <script type="text/template">
-                                                ## What (next)
-
-                                                Seriously. BIDS is what you make it.
-                                                
-                                            </script>
-                                        </section>
-                                        <section data-markdown>
-                                            <script type="text/template">
-                                                ## Some Ideas
-
-                                                - New leader for 2015-2016
-                                                - Decision tree tool based on the checklist
-                                                - Whitepaper based on the conference
-                                                - Compare tools for reproducible workflows
-                                                - Software Carpentry for PIs
-                                                - Overlay Journal
-                                                - Mentorship (could be a link to the education group)
-                                                - Dataverse
-                                                - MathSciNet reviews for OSS
-                                                - Repositories of benchmark data sets
-
-
-
-                                            </script>
+					<section>
+                                        <h2>Katy Is Supported By</h2>
+                                                <span class="fragment">
+                                                <a href="http://bids.berkeley.edu"
+                                                  class="image"><img
+                                                  width="25%"
+                                                  src="http://bids.berkeley.edu/sites/all/themes/bids/logo.png"
+                                                  alt="BIDS Logo"></a>
+                                                </span>
+                                                <span class="fragment">
+                                                <a href="http://nssc.berkeley.edu"
+                                                  class="image"><img
+                                                  width="25%"
+                                                  src="http://nssc.berkeley.edu/images/NSSC_newLogo_medium.png"
+                                                  alt=""></a>
+                                                </span>
+                                                <span class="fragment">
+                                                <a href="http://fhr.nuc.berkeley.edu"
+                                                  class="image"><img
+                                                  width="25%"
+                                                  src="http://fhr.nuc.berkeley.edu/wp-content/uploads/2014/10/FHR-logo-300x175.jpg"
+                                                  alt="FHR Logo"></a>
+                                                </span>
                                         </section>
                                 </section>
 				<section>
 					<h1>THE END</h1>
                                         <h3><a 
                                             href="https://katyhuff.github.io">Katy Huff</a> </h3>
-                                        <a href="https://katyhuff.github.io/all-aboard-bids-2015">katyhuff.github.io/all-aboard-bids-2015</a> 
+                                        <a href="https://katyhuff.github.io/bids-faire-2015">katyhuff.github.io/bids-faire-2015</a> 
 
 <br/>
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img 
   alt="Creative Commons License" style="border-width:0" 
   src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span 
-  xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Effective Computation In Physics?</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://katyhuff.github.io" property="cc:attributionName" rel="cc:attributionURL">Kathryn Huff</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://katyhuff.github.io/all-aboard-bids-2015" rel="dct:source">http://katyhuff.github.io/all-aboard-bids-2015</a>.  
+  xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Effective Computation In Physics?</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://katyhuff.github.io" property="cc:attributionName" rel="cc:attributionURL">Kathryn Huff</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://katyhuff.github.io/bids-faire-2015" rel="dct:source">http://katyhuff.github.io/bids-faire-2015</a>.  
 				</section>
 
 			</div>
